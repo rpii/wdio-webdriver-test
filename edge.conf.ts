@@ -13,7 +13,7 @@ const EdgeConfig = {
                 "--verbose",                     
                 "--acceptInsecureCerts=true", 
                 "--ignore-ssl-errors",
-                "--window-size=1920,1080",
+                "--window-size=1600,1200",
                 "--ignore-certificate-errors",
             ] },
             'wdio:edgedriverOptions' :  {

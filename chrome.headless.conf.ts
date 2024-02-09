@@ -10,6 +10,7 @@ const ChromeHeadlessConfig = {
             browserName: 'chrome',
             'goog:chromeOptions': {
                 args: [
+                    "--verbose",
                     "--acceptInsecureCerts=true", 
                     "--ignore-ssl-errors",
                     '--headless=new', 
@@ -19,8 +20,7 @@ const ChromeHeadlessConfig = {
             },
             'wdio:chromedriverOptions':  {
                 binary: currentDirectory + "/webdrivers/" + binary,
-                logLevel: "ALL",
-                // enableChromeLogs:true,
+                enableChromeLogs:true,
                 // logPath:"logs"
             }    
         }     
