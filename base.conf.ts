@@ -122,7 +122,7 @@ const BaseConfig: WebdriverIO.Config = {
             debug: false,
             outputDir: './reports/html-reports/',
             filename: 'report.html',
-            reportTitle: 'Webdriverio Test Report',
+            reportTitle: 'Webdriverio Webdriver Test Report',
             collapseTests: true,
             collapseSuites: true,
             removeOutput: true,
@@ -149,10 +149,9 @@ const BaseConfig: WebdriverIO.Config = {
             {
                 outputDir: './reports/html-reports/',
                 filename: process.env.TEST_BROWSER + '-master-report.html',
-                reportTitle: 'WebdriverIO Test Report',
+                reportTitle: 'WebdriverIO Webdriver Test Report',
                 browserName: (process.env.TEST_BROWSER) ? process.env.TEST_BROWSER : 'unspecified',
                 showInBrowser: true,
-                produceJson: true,
                 collapseTests: true,
                 linkScreenshots: false,
                 useOnAfterCommandForScreenshot: false
