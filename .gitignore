@@ -1,0 +1,13 @@
+.node_modules
+.yarnclean
+build
+dist
+.idea
+reports
+node_modules
+*.log
+logs
+wdio.config.js
+.pnp.*
+.yarn
+

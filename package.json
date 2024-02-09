@@ -1,0 +1,31 @@
+{
+  "name": "wdio-test-project",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/browser-runner": "^8.29.7",
+    "@wdio/cli": "^8.29.7",
+    "@wdio/firefox-profile-service": "^8.29.1",
+    "@wdio/logger": "^8.28.0",
+    "@wdio/mocha-framework": "^8.29.3",
+    "@wdio/spec-reporter": "^8.29.1",
+    "dotenv": "^16.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "typescript-string-operations": "^1.5.0",
+    "wdio-html-nice-reporter": "latest",
+    "webdriverio": "^8.29.7"
+  },
+  "scripts": {
+    "clean": "rimraf build logs reports",
+    "clean-logs": "rimraf logs",
+    "test:chrome": "node node_modules/@wdio/cli/bin/wdio.js ./chrome.conf.ts",
+    "test:chrome-headless": "node node_modules/@wdio/cli/bin/wdio.js ./chrome.headless.conf.ts",
+    "test:chrome-headless-linux": "node node_modules/@wdio/cli/bin/wdio.js ./chrome.headless.linux.conf.ts",
+    "test:edge": "env NODE_TLS_REJECT_UNAUTHORIZED=0 node node_modules/@wdio/cli/bin/wdio.js ./edge.conf.ts",
+    "test:edge-headless": "env NODE_TLS_REJECT_UNAUTHORIZED=0 node node_modules/@wdio/cli/bin/wdio.js ./edge.headless.conf.ts",
+    "test:firefox": "env NODE_TLS_REJECT_UNAUTHORIZED=0 node node_modules/@wdio/cli/bin/wdio.js ./firefox.conf.ts",
+    "test:firefox-headless": "env NODE_TLS_REJECT_UNAUTHORIZED=0 node node_modules/@wdio/cli/bin/wdio.js ./firefox.headless.conf.ts",
+    "test:firefox-headless-linux": "env NODE_TLS_REJECT_UNAUTHORIZED=0 node node_modules/@wdio/cli/bin/wdio.js ./firefox.headless.linux.conf.ts"
+  },
+  "packageManager": "yarn@4.1.0"
+}
