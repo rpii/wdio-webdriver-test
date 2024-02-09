@@ -736,7 +736,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rpii/wdio-report-events@npm:^8.0.2":
+"@rpii/wdio-report-events@npm:^8.0.2, @rpii/wdio-report-events@npm:latest":
   version: 8.0.2
   resolution: "@rpii/wdio-report-events@npm:8.0.2"
   checksum: 74889339bfe2e454b74fe2ab315704e3a3ae0ba0ec7de357d4254c5e456f2bfde7e4b90324eada9215a5ac5ecf60a4a8a7d025378faebbcffd73936772dded57
@@ -3099,7 +3099,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^11.1.0":
+"fs-extra@npm:^11.1.0, fs-extra@npm:latest":
   version: 11.2.0
   resolution: "fs-extra@npm:11.2.0"
   dependencies:
@@ -6393,6 +6393,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "wdio-test-project@workspace:."
   dependencies:
+    "@rpii/wdio-report-events": latest
     "@wdio/browser-runner": ^8.29.7
     "@wdio/cli": ^8.29.7
     "@wdio/firefox-profile-service": ^8.29.1
@@ -6400,6 +6401,7 @@ __metadata:
     "@wdio/mocha-framework": ^8.29.3
     "@wdio/spec-reporter": ^8.29.1
     dotenv: ^16.3.1
+    fs-extra: latest
     ts-node: ^10.9.2
     typescript: ^5.3.3
     typescript-string-operations: ^1.5.0
